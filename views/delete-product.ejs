@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("_head") %>
+</head>
+
+<body>
+    <%- include("_header") %>
+
+        <div class="container">
+            <!-- FORMULÁRIO PARA SELECIONAR O ITEM A SER DELETADO -->
+
+            <h1 class="título">Deletar um item do cardápio</h1>
+            <form action="/delete" method="get">
+                <div class="mb-3">
+                    <label for="productId" class="form-label">"Qual produto que deseja excluir?"</label>
+                    <select class="form-select" name="productId" required="required" aria-label="Selecione o produto que deseja excluir">
+                        <option selected value="">- Selecione aqui...</option>
+                        <% products.forEach(product=> { %>
+                            <option value="<%= product.id %>">
+                                <%= product.name %>
+                            </option>
+                            <% }) %>
+                    </select>
+                    <button type="submit" class="btn">Deletar item</button>
+                </div>
+               
+            </form>
+        </div>
+</body>
+
+</html>

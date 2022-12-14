@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include("_head") %>
+</head>
+
+<body>
+
+  <%- include("_header") %>
+
+    <main class="body container">
+      <div class="título">
+        <%= title %>
+      </div>
+      <form method="get" action="/admin"><div class="justify-content-center">
+        <div class="col">
+          <div class="mb-4">
+            <label for="login" class="form-label">Login</label>
+            <input type="text" class="form-control"  aria-describedby="login" required>
+          </div>
+          <div class="mb-4">
+            <label for="password" class="form-label">Senha</label>
+            <input type="password" class="form-control"  aria-describedby="password" required>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn">Entrar</button></form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&family=Bebas+Neue&family=Meow+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&family=Meow+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+
+body { 
+  font-family: "Bebas Neue";
+  background-color: #000000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+a {
+  color: #08fd0c;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.história {
+  color: #fcd83d;
+  margin: 0 50px;
+  align-items: center;
+  font-family: "Advent Pro";
+  font-size: 30px
+}
+
+.história a {
+  color: #fcd83d;
+}
+
+.história a:hover {
+  color: #0ab60d;
+}
+
+
+.título{
+  color: #FF0099;
+  margin: 0 50px;
+  align-items: center;
+  font-size: 50px;
+  /* padding: 25px; */
+  font-family: "Meow Script"
+}
+
+.card-img {
+  height: 450px;
+  width: auto;
+}
+
+.carousel-item img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.section-products,
+.section-categories {
+  padding-top: 32px;
+}
+
+.login-container {
+  background-color: rgb(0, 0, 0);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-login {
+  width: 30vw;
+  background-color: rgb(0, 0, 0);
+}
+
+.card-title {
+  color: #ff0099;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.card-body {
+  background-color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.card {
+  border: none;
+}
+
+.logo {
+  display: block;
+  width: 200px; 
+  margin: 0px auto;
+  font-size: 30px;
+  color: #08fd0c;
+  padding-top: 25px;
+}
+
+.cabeçalho {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seta {
+  height: 100px;
+}
+
+.menu {
+  display: block;
+  width: 100%; 
+  margin: 0px auto;
+  font-size: 30px;
+  color: #0ab60d;
+  padding-top: 25px; 
+  margin-bottom: 20px; 
+}
+
+.menu-cabeçalho{
+  color: #0ab60d;
+  margin: 20px 20px;  
+}
+
+.reader {
+  background-color: rgb(0, 0, 0);
+  padding: 1rem;
+  display: flex;
+
+}
+
+.container {
+  color: #08fd0c;
+  font-weight: bold;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-link {
+  color: #08fd0c;
+  text-decoration: none;
+}
+
+.btn {
+  color: #0ab60d;
+  font-size: 30px;
+  border: 5px solid #FF0099;
+  font-family: "Advent Pro";
+}
+
+.preço{
+    font-family: 'Segoe UI';
+    font-size: large;
+    margin-top: 20px;
+}
+
+.descrição{
+  font-family: 'Segoe UI';
+  color:rgb(255, 255, 255)
+}
+
+.card-title {
+  font-family: "Advent Pro";
+}
+
+.form-label {
+  font-family: "Advent Pro";
+  color:#fcd83d
+}
+
+.mb-3 {
+  margin-top: 10px
+}
+

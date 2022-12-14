@@ -1,0 +1,13 @@
+<div class="cabeçalho">
+    <img src="/images/esquerda.gif" class="seta" alt="logo">
+    <a href="/"> <img src="/images/logo.jpeg" class="logo" alt="logo"> </a>
+    <img src="/images/direita.gif" class="seta" alt="logo">
+</div>
+
+<div class="menu">
+    <% for (let i=0; i<links.length; i++) { %>
+        <a href="<%= links[i].href %>" class="menu-cabeçalho">
+            <%= links[i].label %>
+        </a>
+        <% } %>
+</div>

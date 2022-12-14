@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <%- include("_head") %>
+</head>
+
+<body>
+  <%- include("_header") %>
+
+    <div class="container">
+      <% if (role==="cardapio" ) { %>
+        <h1 class="título">Cardápio</h1>
+        <section id="categories">
+          <div class="row">
+            <% categories.forEach(category=> { %>
+              <div class="col-3">
+                <a href="/category/<%= category.id %>/products">
+                  <div class="card">
+                    <img src="/images/<%= category.image %>" class="card-img-top" alt="...">
+                    <div class="card-body">
+
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <% }); %>
+          </div>
+        </section>
+        <% } %>
+
+          <% if (role==="products" ) { %>
+            <h1 class="título">
+              <%= category ? category.name : "Nossos itens..." %>
+            </h1>
+            <section id="products">
+              <div class="row">
+                <% products.forEach(product=> { %>
+                  <div class="col-4">
+                    <a href="/products/<%= product.id %>">
+                      <div class="card">
+                        <img src="/images/<%= product.image %>" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            <%= product.name %>
+                          </h5>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <% }); %>
+              </div>
+            </section>
+            <% } %>
+
+              <% if (role==="detail" ) { %>
+                <section id="detail">
+                  <h2 class="título">
+                    <%= product.name %>
+                  </h2>
+                  <img src="/images/<%= product.image %>" class="card-img" alt="...">
+                  <p class="preço">
+                    <%= product.price %>
+                  </p>
+                  <p class="história">
+                    <%= product.description %>
+                  </p>
+                </section>
+                <% } %>
+
+                  <br>
+                  <a class="btn" href="/products" role="button">Clique aqui para ver todos os nossos produtos</a>
+
+    </div>
+</body>
+
+</html>
